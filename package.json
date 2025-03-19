@@ -1,4 +1,9 @@
 {
+  "name": "my-rolldown-vite",
+  "type": "module",
+  "scripts" : {
+    "build": "rolldown src/main.js --file bundle.js"
+  },
   "devDependencies": {
     "rolldown": "^1.0.0-beta.6"
   }
