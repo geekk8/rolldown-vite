@@ -1,7 +1,8 @@
 import { hello } from './hello'
-import { sum } from './sum'
 import { used } from './lib'
+import { logger } from './utils'
+
+logger('main page loaded!')
 
 hello()
-sum(3, 4)
 used()
