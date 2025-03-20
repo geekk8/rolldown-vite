@@ -10,7 +10,7 @@ export default defineConfig(
       entryFileNames: '[name].[hash].js',
       chunkFileNames: 'chunks/[name].[hash].js',
       advancedChunks: {
-        miniSize:10000,
+        minSize:10, // 10kb(10000) 권장 크기
         groups: [
           {
             name:'vendor',
@@ -19,7 +19,8 @@ export default defineConfig(
           },
           {
             name: 'utils',
-            test: /src\/utils\.js/,
+            test: /src\/utils/,
+            priority: 5,
           }
         ]
       }
