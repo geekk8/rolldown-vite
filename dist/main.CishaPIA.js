@@ -1,0 +1,1 @@
+import{__esm as l,init_utils as o,logger as i}from"./chunks/utils.CznWyHA6.js";function e(){console.log("hello rolldown!")}var n=l({"src/hello.js"(){o(),i("hello page loaded!")}});function s(){console.log("\uC774 \uD568\uC218\uB294 \uC0AC\uC6A9\uB429\uB2C8\uB2E4")}var a=l({"src/lib.ts"(){}}),r=l({"src/main.js"(){n(),a(),o(),i("main page loaded!"),e(),s()}});r();
