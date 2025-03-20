@@ -1,11 +1,12 @@
 {
   "name": "my-rolldown-vite",
   "type": "module",
-  "scripts" : {
-    "_comment":"-c 플래그와 함께 사용되는 기본 구성 파일은 rolldonw.config.js이지만 .ts, .mjs 확장자를 사용하는 경우에는 전체 파일 이름을 지정해야 한다",
+  "scripts": {
+    "_comment": "-c 플래그와 함께 사용되는 기본 구성 파일은 rolldonw.config.js이지만 .ts, .mjs 확장자를 사용하는 경우에는 전체 파일 이름을 지정해야 한다",
     "build": "rolldown -c rolldown.config.ts"
   },
   "devDependencies": {
-    "rolldown": "^1.0.0-beta.6"
+    "rolldown": "^1.0.0-beta.6",
+    "rollup-plugin-esbuild": "^6.2.1"
   }
 }
