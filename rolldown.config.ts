@@ -1,5 +1,5 @@
 import { defineConfig, rolldown } from 'rolldown'
-import { minify } from 'rollup-plugin-esbuild'
+import esbuild from 'rollup-plugin-esbuild'
 
 const bundle = await rolldown({
   input: 'src/main.js',
@@ -10,12 +10,14 @@ export default defineConfig(
     input: 'src/main.js',
     output: {
       format: 'esm',
+      file: 'bundle.js',
+    },
+    treeshake: {
+      moduleSideEffects: false
     },
     plugins: [
-      minify({
-        module: true,
-        mangle:{},
-        compress: {}
+      esbuild({
+        minify: true
       })
     ]
   },
