@@ -6,6 +6,7 @@
     "build": "rolldown -c rolldown.config.ts"
   },
   "devDependencies": {
+    "esbuild": "^0.25.1",
     "rolldown": "^1.0.0-beta.6",
     "rollup-plugin-esbuild": "^6.2.1"
   }
