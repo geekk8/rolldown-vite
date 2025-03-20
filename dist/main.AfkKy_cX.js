@@ -1,0 +1,1 @@
+import{logger as o}from"./chunks/utils.BVRQIoTi.js";function l(){console.log("hello rolldown!")}o("hello page loaded!");function e(){console.log("\uC774 \uD568\uC218\uB294 \uC0AC\uC6A9\uB429\uB2C8\uB2E4")}o("main page loaded!"),l(),e();
