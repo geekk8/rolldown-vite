@@ -3,12 +3,17 @@
   "type": "module",
   "scripts": {
     "_comment": "-c 플래그와 함께 사용되는 기본 구성 파일은 rolldonw.config.js이지만 .ts, .mjs 확장자를 사용하는 경우에는 전체 파일 이름을 지정해야 한다",
-    "build": "rolldown -c rolldown.config.ts"
+    "build": "rm -rf dist && rolldown -c rolldown.config.ts",
+    "build:rolldown": "rolldown -c rolldown.config.ts",
+    "build:vite": "vite build --outDir dist-vite",
+    "dev": "vite",
+    "benchmark": "node benchmark.js"
   },
   "devDependencies": {
     "esbuild": "^0.25.1",
     "rolldown": "^1.0.0-beta.6",
-    "rollup-plugin-esbuild": "^6.2.1"
+    "rollup-plugin-esbuild": "^6.2.1",
+    "vite": "^6.0.0"
   },
   "dependencies": {
     "lodash-es": "^4.17.21"
