@@ -1,1 +1,0 @@
-var o=Object.getOwnPropertyNames,r=(t,e)=>function(){return t&&(e=(0,t[o(t)[0]])(t=0)),e};function i(t){console.log(`[LOG] ${t}`)}var n=r({"src/utils/index.ts"(){}});export{r as __esm,n as init_utils,i as logger};
